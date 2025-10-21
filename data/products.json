@@ -1,0 +1,232 @@
+[
+  {
+    "ID": 1,
+    "Name": "HP EliteBook 840 G3",
+    "Category": "Laptops",
+    "Description": "Business laptop with Intel Core i5, 8GB RAM, 256GB SSD, 14\" display",
+    "Price": 450,
+    "Stock": 5,
+    "Rating": 4.3,
+    "Tags": ["Intel Core i5", "SSD", "business", "14-inch"]
+  },
+  {
+    "ID": 2,
+    "Name": "Lenovo ThinkPad X270",
+    "Category": "Laptops",
+    "Description": "Compact laptop with Intel Core i7, 16GB RAM, 512GB SSD, 12.5\" display",
+    "Price": 520,
+    "Stock": 3,
+    "Rating": 4.5,
+    "Tags": ["Intel Core i7", "compact", "SSD", "12.5-inch"]
+  },
+  {
+    "ID": 3,
+    "Name": "Dell Latitude 5490",
+    "Category": "Laptops",
+    "Description": "Durable laptop with Intel Core i5, 8GB RAM, 256GB SSD, 14\" FHD display",
+    "Price": 480,
+    "Stock": 0,
+    "Rating": 4.2,
+    "Tags": ["Intel Core i5", "FHD", "SSD", "durable"]
+  },
+  {
+    "ID": 4,
+    "Name": "Logitech MX Master 3",
+    "Category": "Accessories",
+    "Description": "Wireless mouse with precision tracking and ergonomic design",
+    "Price": 89,
+    "Stock": 15,
+    "Rating": 4.8,
+    "Tags": ["mouse", "wireless", "ergonomic", "Logitech"]
+  },
+  {
+    "ID": 5,
+    "Name": "USB-C Hub 7-in-1",
+    "Category": "Accessories",
+    "Description": "Adapter with HDMI, USB 3.0, SD card reader",
+    "Price": 35,
+    "Stock": 8,
+    "Rating": 4.4,
+    "Tags": ["USB-C", "hub", "adapter", "multi-port"]
+  },
+  {
+    "ID": 6,
+    "Name": "Professional Laptop Bag",
+    "Category": "Accessories",
+    "Description": "Laptop bag with padded compartment and multiple pockets",
+    "Price": 60,
+    "Stock": 12,
+    "Rating": 4.6,
+    "Tags": ["bag", "laptop", "travel", "padded"]
+  },
+  {
+    "ID": 7,
+    "Name": "8GB DDR4 RAM Module",
+    "Category": "Parts",
+    "Description": "8GB DDR4 laptop memory module, 2666MHz",
+    "Price": 55,
+    "Stock": 20,
+    "Rating": 4.5,
+    "Tags": ["RAM", "DDR4", "8GB", "memory"]
+  },
+  {
+    "ID": 8,
+    "Name": "512GB SSD SATA III",
+    "Category": "Parts",
+    "Description": "512GB SATA III 2.5\" solid state drive",
+    "Price": 75,
+    "Stock": 10,
+    "Rating": 4.6,
+    "Tags": ["SSD", "SATA", "storage", "512GB"]
+  },
+  {
+    "ID": 9,
+    "Name": "Windows 11 Pro",
+    "Category": "Software",
+    "Description": "Microsoft Windows 11 Professional license key",
+    "Price": 120,
+    "Stock": 50,
+    "Rating": 4.7,
+    "Tags": ["Windows", "OS", "license", "Microsoft"]
+  },
+  {
+    "ID": 10,
+    "Name": "Microsoft Office 365",
+    "Category": "Software",
+    "Description": "Annual subscription for Office 365 Personal",
+    "Price": 70,
+    "Stock": 30,
+    "Rating": 4.6,
+    "Tags": ["Office", "Microsoft", "subscription", "productivity"]
+  },
+  {
+    "ID": 11,
+    "Name": "External Hard Drive 1TB",
+    "Category": "Accessories",
+    "Description": "Portable external hard drive with USB 3.0",
+    "Price": 65,
+    "Stock": 8,
+    "Rating": 4.5,
+    "Tags": ["storage", "external", "USB 3.0", "1TB"]
+  },
+  {
+    "ID": 12,
+    "Name": "Wireless Keyboard",
+    "Category": "Accessories",
+    "Description": "Slim wireless keyboard with quiet keys",
+    "Price": 45,
+    "Stock": 15,
+    "Rating": 4.4,
+    "Tags": ["keyboard", "wireless", "quiet", "slim"]
+  },
+  {
+    "ID": 13,
+    "Name": "Webcam 1080p",
+    "Category": "Accessories",
+    "Description": "HD webcam with microphone and privacy cover",
+    "Price": 40,
+    "Stock": 12,
+    "Rating": 4.3,
+    "Tags": ["webcam", "HD", "privacy", "video"]
+  },
+  {
+    "ID": 14,
+    "Name": "Antivirus Software",
+    "Category": "Software",
+    "Description": "Comprehensive antivirus protection for 1 year",
+    "Price": 25,
+    "Stock": 40,
+    "Rating": 4.2,
+    "Tags": ["security", "antivirus", "software", "protection"]
+  },
+  {
+    "ID": 15,
+    "Name": "Monitor Stand",
+    "Category": "Accessories",
+    "Description": "Adjustable monitor stand with cable management",
+    "Price": 30,
+    "Stock": 18,
+    "Rating": 4.5,
+    "Tags": ["monitor", "stand", "adjustable", "ergonomic"]
+  },
+  {
+    "ID": 16,
+    "Name": "USB-C Cable",
+    "Category": "Accessories",
+    "Description": "High-speed USB-C to USB-C cable, 2m",
+    "Price": 15,
+    "Stock": 25,
+    "Rating": 4.6,
+    "Tags": ["USB-C", "cable", "2m", "fast"]
+  },
+  {
+    "ID": 17,
+    "Name": "WiFi Adapter",
+    "Category": "Accessories",
+    "Description": "USB WiFi adapter with dual-band support",
+    "Price": 35,
+    "Stock": 14,
+    "Rating": 4.4,
+    "Tags": ["WiFi", "adapter", "dual-band", "USB"]
+  },
+  {
+    "ID": 18,
+    "Name": "Dell OptiPlex 3070",
+    "Category": "Desktop",
+    "Description": "Desktop with Intel Core i5, 8GB RAM, 256GB SSD",
+    "Price": 500,
+    "Stock": 2,
+    "Rating": 4.3,
+    "Tags": ["desktop", "Intel Core i5", "SSD", "Dell"]
+  },
+  {
+    "ID": 19,
+    "Name": "Graphics Card GTX 1650",
+    "Category": "Parts",
+    "Description": "NVIDIA GeForce GTX 1650 4GB GDDR6 graphics card",
+    "Price": 180,
+    "Stock": 0,
+    "Rating": 4.7,
+    "Tags": ["graphics", "GTX 1650", "NVIDIA", "gaming"]
+  },
+  {
+    "ID": 20,
+    "Name": "Power Supply Unit",
+    "Category": "Parts",
+    "Description": "500W PSU with 80 Plus Bronze certification",
+    "Price": 65,
+    "Stock": 7,
+    "Rating": 4.5,
+    "Tags": ["PSU", "500W", "power", "Bronze"]
+  },
+  {
+    "ID": 21,
+    "Name": "CPU Cooler",
+    "Category": "Parts",
+    "Description": "Air CPU cooler with quiet fan operation",
+    "Price": 35,
+    "Stock": 12,
+    "Rating": 4.4,
+    "Tags": ["cooler", "CPU", "quiet", "air"]
+  },
+  {
+    "ID": 22,
+    "Name": "External SSD 500GB",
+    "Category": "Accessories",
+    "Description": "Portable SSD with USB-C interface",
+    "Price": 90,
+    "Stock": 9,
+    "Rating": 4.6,
+    "Tags": ["SSD", "external", "USB-C", "500GB"]
+  },
+  {
+    "ID": 23,
+    "Name": "Bluetooth Speaker",
+    "Category": "Accessories",
+    "Description": "Portable Bluetooth speaker with deep bass",
+    "Price": 55,
+    "Stock": 20,
+    "Rating": 4.5,
+    "Tags": ["speaker", "Bluetooth", "portable", "bass"]
+  }
+]
