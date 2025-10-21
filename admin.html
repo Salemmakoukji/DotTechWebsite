@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - DotTech</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <custom-navbar></custom-navbar>
+
+    <main class="min-h-screen py-8">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h1 class="text-5xl font-bold mb-4">Admin Panel</h1>
+                <p class="text-xl text-gray-600">Manage your products and site content</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Products Management -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 lg:col-span-2">
+                        <h2 class="text-3xl font-bold mb-6">Products Management</h2>
+                        
+                        <!-- CSV Upload Section -->
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-bold mb-4">Upload Products CSV</h3>
+                            <div class="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center">
+                        <i data-feather="upload" class="w-12 h-12 text-gray-400 mx-auto mb-4"></i>
+                        <p class="text-gray-600 mb-4">Upload a CSV file with your product data</p>
+                        <input type="file" id="csv-file" accept=".csv" class="hidden">
+                        <button onclick="document.getElementById('csv-file').click()" 
+                                    class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2 mx-auto">
+                            <i data-feather="file-text"></i>
+                            Choose CSV File
+                        </button>
+                        <p class="text-sm text-gray-500 mt-2">Expected columns: ID, Name, Category, Description, Price, Stock, ImageURL, SimilarIDs</button>
+                        <div id="upload-status" class="mt-4"></div>
+                    </div>
+                </div>
+
+                <!-- Current Products -->
+                <div class="mt-6">
+                    <h3 class="text-2xl font-bold mb-4">Current Products</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-4 py-2">ID</th>
+                                    <th class="px-4 py-2">Name</th>
+                                    <th class="px-4 py-2">Category</th>
+                                    <th class="px-4 py-2">Price</th>
+                                    <th class="px-4 py-2">Stock</th>
+                                    <th class="px-4 py-2">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="products-table-body">
+                                <!-- Products will be loaded here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Site Management -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                            <h3 class="text-2xl font-bold mb-4">Site Management</h3>
+                            <div class="space-y-4">
+                                <button onclick="clearAllData()" 
+                                        class="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors flex items-center justify-center gap-2">
+                                <i data-feather="trash-2"></i>
+                                Clear All Data
+                            </button>
+                            
+                            <button onclick="exportProducts()" 
+                                        class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                                <i data-feather="download"></i>
+                                Export Products
+                            </button>
+                            
+                            <button onclick="backupSite()" 
+                                        class="w-full bg-gray-900 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                                <i data-feather="save"></i>
+                                Backup Site Data
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="component/navbar.js"></script>
+    <script src="component/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // CSV file upload handling
+        document.getElementById('csv-file').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                handleCSVUpload(file);
+            }
+        });
+        
+        // Load current products
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAdminProducts();
+        });
+    </script>
+</body>
+</html>

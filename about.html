@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - DotTech</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-white text-gray-900">
+    <custom-navbar></custom-navbar>
+
+    <main class="min-h-screen py-8">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Header -->
+                <div class="text-center mb-16">
+                    <h1 class="text-5xl font-bold mb-4">About DotTech</h1>
+                    <p class="text-xl text-gray-600">Tech made simple, reliable, and affordable.</p>
+                </div>
+
+                <!-- Story Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+                        <p class="text-gray-700 mb-6">
+                    DotTech was born from the shared vision of Salem and Fadi – two tech enthusiasts who believed that technology should be accessible to everyone. Frustrated by the complexity and high costs in the tech industry, they set out to create a different kind of tech company.
+                </p>
+                <p class="text-gray-700 mb-6">
+                    Starting from a small workshop, they combined their expertise in hardware and software to provide comprehensive tech solutions. What started as a passion project has grown into a trusted name in the tech community.
+                </p>
+                <p class="text-gray-700">
+                    Today, DotTech continues to grow, but our core mission remains the same: to make technology simple, reliable, and affordable for everyone.
+                </p>
+            </div>
+            
+            <div class="text-center">
+                <img src="http://static.photos/workspace/640x360/1" 
+                         alt="DotTech Founders" 
+                         class="w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg">
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="mt-20 bg-gray-50 rounded-2xl p-8">
+                <h2 class="text-3xl font-bold text-center mb-8">Our Mission</h2>
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <i data-feather="target" class="w-12 h-12 text-gray-900 mx-auto mb-6"></i>
+                <p class="text-xl text-gray-700 text-center max-w-2xl mx-auto">
+                    "At DotTech, we believe that technology should work for you, not the other way around. Our mission is to demystify technology and provide solutions that are not only effective but also accessible to everyone."
+                </p>
+            </div>
+
+            <!-- Team Section -->
+            <div class="mt-20">
+                <h2 class="text-3xl font-bold text-center mb-12">Meet the Founders</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <i data-feather="user" class="w-16 h-16 text-gray-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Salem</h3>
+                    <p class="text-gray-600">Hardware Specialist & Business Strategist</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <i data-feather="user" class="w-16 h-16 text-gray-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Fadi</h3>
+                    <p class="text-gray-600">Software Engineer & Customer Experience Lead</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<custom-footer></custom-footer>
+
+<script src="component/navbar.js"></script>
+<script src="component/footer.js"></script>
+<script src="script.js"></script>
+<script>
+    feather.replace();
+</script>
+</body>
+</html>

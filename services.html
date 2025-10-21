@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - DotTech</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-white text-gray-900">
+    <custom-navbar></custom-navbar>
+
+    <main class="min-h-screen py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h1 class="text-5xl font-bold mb-4">Our Services</h1>
+                <p class="text-xl text-gray-600">Professional tech services for all your needs</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Laptop Repair -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6">
+                    <i data-feather="tool" class="w-12 h-12 text-gray-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Laptop Repair</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive repair services for all laptop brands and models, including screen replacement, keyboard repair, and motherboard fixes.</p>
+                    <button onclick="requestService('Laptop Repair')" 
+                            class="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2">
+                        <i data-feather="message-circle"></i>
+                        Request via WhatsApp
+                    </button>
+                </div>
+
+                <!-- OS Installation -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6">
+                    <i data-feather="cpu" class="w-12 h-12 text-gray-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">OS Installation</h3>
+                    <p class="text-gray-600 mb-6">Clean installation of Windows, Linux, or macOS with all necessary drivers and essential software.</p>
+                    <button onclick="requestService('OS Installation')" 
+                            class="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2">
+                        <i data-feather="message-circle"></i>
+                        Request via WhatsApp
+                    </button>
+                </div>
+
+                <!-- Networking Setup -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6">
+                        <i data-feather="wifi" class="w-12 h-12 text-gray-900 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Networking Setup</h3>
+                    <p class="text-gray-600 mb-6">Complete networking solutions including router configuration, wireless setup, and network security for homes and businesses.</p>
+                    <button onclick="requestService('Networking Setup')" 
+                                class="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2">
+                            <i data-feather="message-circle"></i>
+                            Request via WhatsApp
+                        </button>
+                    </div>
+
+                <!-- Virus Removal -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6">
+                    <i data-feather="shield" class="w-12 h-12 text-gray-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Virus Removal</h3>
+                    <p class="text-gray-600 mb-6">Thorough virus and malware removal with system optimization to restore performance and security.</p>
+                    <button onclick="requestService('Virus Removal')" 
+                            class="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2">
+                        <i data-feather="message-circle"></i>
+                        Request via WhatsApp
+                    </button>
+                </div>
+
+                <!-- Data Recovery -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6">
+                    <i data-feather="hard-drive" class="w-12 h-12 text-gray-900 mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-4">Data Recovery</h3>
+                    <p class="text-gray-600 mb-6">Professional data recovery services for hard drives, SSDs, and external storage devices.</p>
+                    <button onclick="requestService('Data Recovery')" 
+                            class="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2">
+                        <i data-feather="message-circle"></i>
+                        Request via WhatsApp
+                    </button>
+                </div>
+
+                <!-- Hardware Upgrade -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-6">
+                        <i data-feather="plus" class="w-12 h-12 text-gray-900 mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-4">Hardware Upgrade</h3>
+                    <p class="text-gray-600 mb-6">RAM upgrades, SSD installation, and other hardware enhancements to boost performance.</p>
+                    <button onclick="requestService('Hardware Upgrade')" 
+                                class="w-full bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center gap-2">
+                            <i data-feather="message-circle"></i>
+                            Request via WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="component/navbar.js"></script>
+    <script src="component/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

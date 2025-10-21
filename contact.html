@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - DotTech</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-white text-gray-900">
+    <custom-navbar></custom-navbar>
+
+    <main class="min-h-screen py-8">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h1 class="text-5xl font-bold mb-4">Contact Us</h1>
+                    <p class="text-xl text-gray-600">Get in touch with the DotTech team</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Information -->
+                    <div class="space-y-8">
+                        <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+                        
+                        <!-- WhatsApp -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                                <i data-feather="message-circle" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">WhatsApp</h3>
+                            <p class="text-gray-600">Fastest way to reach us</p>
+                            <a href="https://wa.me/1234567890" 
+                                   class="inline-block mt-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors flex items-center gap-2">
+                                    <i data-feather="message-circle"></i>
+                                    +1 234 567 890
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center">
+                                <i data-feather="phone" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Phone</h3>
+                            <p class="text-gray-600">Call us directly</p>
+                            <a href="tel:+1234567890" 
+                                   class="inline-block mt-2 bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                                    +1 234 567 890
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                                <i data-feather="mail" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Email</h3>
+                            <p class="text-gray-600">Send us an email</p>
+                            <a href="mailto:info@dottech-sy.com" 
+                                   class="inline-block mt-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                                    info@dottech-sy.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                                <i data-feather="map-pin" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Location</h3>
+                            <p class="text-gray-600">Visit our workshop</p>
+                            <p class="mt-2 text-gray-700">123 Tech Street<br>Damascus, Syria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-2xl p-8">
+                            <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+                            <form class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent" 
+                                           placeholder="Your name">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent" 
+                                           placeholder="your.email@example.com">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent" 
+                                                  placeholder="How can we help you?"></textarea>
+                                </div>
+                                <button type="button" 
+                                        class="w-full bg-gray-900 text-white py-4 px-6 rounded-lg font-semibold hover:bg-gray-800 transition-colors">
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="component/navbar.js"></script>
+    <script src="component/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Simple form submission
+        document.querySelector('button[type="button"]')?.addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                showNotification('Message sent successfully! We\'ll get back to you soon.', 'success');
+                
+                // Clear form
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            } else {
+                showNotification('Please fill in all fields.', 'error');
+            }
+        });
+    </script>
+</body>
+</html>
